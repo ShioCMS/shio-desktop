@@ -1,0 +1,31 @@
+{
+  "name": "viglet-shiohara-cms",
+  "productName": "Shiohara CMS",
+  "version": "0.1.0",
+  "main": "main.js",
+  "description": "Model Content and Create Site using Javascript with Native Cache and Search",
+  "scripts": {
+    "package-mac": "electron-packager . --overwrite --platform=darwin --arch=x64 --icon=assets/icons/mac/icon.icns --prune=true --out=release-builds",
+    "package-win": "electron-packager . electron-tutorial-app --overwrite --asar=true --platform=win32 --arch=ia32 --icon=assets/icons/win/icon.ico --prune=true --out=release-builds --version-string.CompanyName=Viglet --version-string.FileDescription=Shiohara CMS --version-string.ProductName=\"Viglet Shiohara CMS\"",
+    "package-linux": "electron-packager . electron-tutorial-app --overwrite --asar=true --platform=linux --arch=x64 --icon=assets/icons/png/1024x1024.png --prune=true --out=release-builds",
+    "create-installer-mac": "electron-installer-dmg ./release-builds/Shiohara\\ CMS-darwin-x64/Shiohara\\ CMS.app shioharaCMS --out=release-builds --overwrite --icon=assets/icons/mac/icon.icns",
+    "create-installer-win": "node installers/windows/createinstaller.js"
+  },
+  "repository": "https://github.com/electron/electron-quick-start",
+  "keywords": [
+    "Viglet",
+    "shiohara",
+    "CMS"
+  ],
+  "author": "Viglet Team",
+  "license": "CC0-1.0",
+  "devDependencies": {
+    "electron": "^2.0.12",
+    "electron-installer-dmg": "^2.0.0",
+    "electron-packager": "^12.2.0",
+    "electron-winstaller": "^2.7.0"
+  },
+  "dependencies": {
+    "appdmg": "^0.5.2"
+  }
+}
