@@ -6,11 +6,11 @@ const {
 } = require('electron')
 
 //handle setupevents as quickly as possible
-const setupEvents = require('./installers/setupEvents')
-if (setupEvents.handleSquirrelEvent()) {
+//const setupEvents = require('./installers/setupEvents')
+//if (setupEvents.handleSquirrelEvent()) {
    // squirrel event handled and app will exit in 1000ms, so don't do anything else
-   return;
-}
+//   return;
+//}
 
 var path = require('path')
 
@@ -27,7 +27,7 @@ function createWindow() {
   })
 
   // and load the index.html of the app.
-  mainWindow.loadURL('https://demo.shiohara.org/')
+  mainWindow.loadURL('https://cloud.shiohara.org/')
 
   // Open the DevTools.
   // mainWindow.webContents.openDevTools()
