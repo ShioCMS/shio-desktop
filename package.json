@@ -1,6 +1,6 @@
 {
-  "name": "viglet-shiohara-cms",
-  "productName": "Shiohara CMS",
+  "name": "shio-desktop",
+  "productName": "Shio CMS",
   "version": "0.1.0",
   "main": "main.js",
   "description": "Model Content and Create Site using Javascript with Native Cache and Search",
@@ -14,18 +14,15 @@
   "repository": "https://github.com/electron/electron-quick-start",
   "keywords": [
     "Viglet",
-    "shiohara",
+    "Shio",
     "CMS"
   ],
   "author": "Viglet Team",
   "license": "CC0-1.0",
   "devDependencies": {
-    "electron": "^2.0.18",
+    "electron": "^9.0.5",
     "electron-installer-dmg": "^2.0.0",
     "electron-packager": "^12.2.0",
     "electron-winstaller": "^2.7.0"
-  },
-  "dependencies": {
-    "appdmg": "^0.5.2"
   }
 }
